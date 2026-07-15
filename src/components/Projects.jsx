@@ -4,11 +4,13 @@ import { motion, useScroll, useSpring, useMotionValueEvent } from 'framer-motion
 import kultstyleVideo from "../assets/projectVideos/kultstyle.mp4";
 
 import irrigationVideo from "../assets/projectVideos/smart-irrigation.mp4";
+ import suvaioVideo from "../assets/projectVideos/suvaio.mp4";
+import skinCancerVideo from "../assets/projectVideos/skin-cancer.mp4";
 
 const projectVideos = {
-  
+  SUVAIO: suvaioVideo,
   KultStyle: kultstyleVideo,
-
+  "Skin Cancer Detection": skinCancerVideo,
   "Smart Irrigation": irrigationVideo
 };
 
@@ -257,7 +259,9 @@ const Projects = () => {
     "React",
   ]}
   github="https://github.com/ShivaaniS12/SUVAIO"
- onClick={() => alert("Demo video coming soon!")}
+ onClick={() =>
+    setSelectedVideo(projectVideos["SUVAIO"])
+  }
   className="md:absolute md:top-[10px] md:right-[8%] rotate-3"
   aosType="fade-left"
   aosDelay="100"
@@ -299,7 +303,9 @@ const Projects = () => {
     "OpenCV",
   ]}
   github="https://github.com/ShivaaniS12"
- onClick={() => alert("Demo video coming soon!")}
+onClick={() =>
+    setSelectedVideo(projectVideos["Skin Cancer Detection"])
+  }
   className="md:absolute md:top-[760px] md:right-[10%] rotate-2"
   aosType="fade-left"
   aosDelay="300"
