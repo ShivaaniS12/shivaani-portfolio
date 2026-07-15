@@ -86,7 +86,7 @@ const Contact = () => {
         </a>
 
         <a
-  href="/resume.pdf"
+  href="/shivaani_resume.pdf"
   download="Shivaani_Resume.pdf"
   className="px-6 py-3 rounded-full bg-white text-black hover:bg-[#ff2a2a] hover:text-white transition"
 >
